@@ -17,7 +17,6 @@ public class LogOnPageSteps {
 
 	@Then("^I enter the (.*) in the email text box$")
 	public void i_enter_the_username_in_the_email_text_box(String usernm) throws Throwable {
-		System.out.println("====> usernm  : " + usernm);
 	   LogOnAction.enterUserName(usernm);
 	}
 

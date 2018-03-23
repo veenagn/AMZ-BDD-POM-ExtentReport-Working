@@ -48,6 +48,8 @@ public class HomePageAction extends Driver{
 	}
 	public static void validateTitle() {
 		String expectedResultTile = prop.getProperty("expectedResultTitle");
-		Assert.assertEquals(expectedResultTile, driver.getTitle());
+		String actualResultTiltle = driver.getTitle();
+		System.out.println("The actual title is: " +actualResultTiltle);
+		Assert.assertEquals(expectedResultTile, actualResultTiltle);
 	}
 }

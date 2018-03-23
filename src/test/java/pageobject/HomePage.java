@@ -16,5 +16,10 @@ public class HomePage extends Driver {
 	public static List<WebElement> autoSelectItem(){
 		return driver.findElements(By.className("s-suggestion"));
 	}
-
+	
+	public static WebElement signInButton() {
+		return driver.findElement(By.id("nav-signin-tooltip"));
+	}
+	
+	
 }

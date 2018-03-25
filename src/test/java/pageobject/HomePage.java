@@ -4,20 +4,23 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import webDriver.Driver;
 
 public class HomePage extends Driver {
-
+	
+		
 	public static WebElement searchField() {
 		return driver.findElement(By.id("twotabsearchtextbox"));
 	}
-
-	public static List<WebElement> autoSelectItem() {
+	
+	public static List<WebElement> autoSelectItem(){
 		return driver.findElements(By.className("s-suggestion"));
 	}
-
-	public static WebElement signInButton() {
+	
+	public static WebElement homesignInButton() {
 		return driver.findElement(By.id("nav-signin-tooltip"));
 	}
+	public static WebElement hoverYourAccountLink() {
+		return driver.findElement(By.id("nav-link-yourAccount"));
+	}	
 }

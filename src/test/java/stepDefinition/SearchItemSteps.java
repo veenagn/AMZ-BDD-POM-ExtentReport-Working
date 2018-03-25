@@ -6,7 +6,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import webDriver.Driver;
 
-public class HomePageSteps {
+public class SearchItemSteps {
 	
 	Driver driver = new Driver();
 	
